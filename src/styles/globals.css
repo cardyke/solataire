@@ -1,0 +1,43 @@
+:root {
+  --card-width: min(70px, 12vw);
+  --card-height: calc(var(--card-width) * 1.4);
+  --card-radius: calc(var(--card-width) * 0.08);
+  --card-gap: calc(var(--card-width) * 0.15);
+  --tableau-offset: calc(var(--card-height) * 0.22);
+  --tableau-offset-facedown: calc(var(--card-height) * 0.08);
+  --board-padding: 8px;
+
+  --color-felt: #0d7a3e;
+  --color-felt-dark: #0a6331;
+  --color-card-back: #1a5276;
+  --color-card-face: #ffffff;
+  --color-red: #d63031;
+  --color-black: #2d3436;
+  --color-empty-pile: rgba(255, 255, 255, 0.15);
+  --color-toolbar: rgba(0, 0, 0, 0.3);
+  --color-text-light: #ffffff;
+
+  --font-card: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  font-family: var(--font-card);
+  background: var(--color-felt);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: none;
+  -webkit-touch-callout: none;
+}
+
+/* Prevent pull-to-refresh and overscroll */
+body {
+  overscroll-behavior: none;
+}
