@@ -1,5 +1,5 @@
 :root {
-  --card-width: min(70px, 12vw);
+  --card-width: min(110px, 12vw);
   --card-height: calc(var(--card-width) * 1.4);
   --card-radius: calc(var(--card-width) * 0.08);
   --card-gap: calc(var(--card-width) * 0.15);
